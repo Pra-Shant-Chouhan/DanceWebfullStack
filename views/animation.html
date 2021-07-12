@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new animation</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        font-family: sans-serif;
+        background-color: #262626;
+    }
+
+    .dancingimg {
+        height: 116px;
+        width: 121px;
+    }
+
+    .mainH h2 {
+        margin-top: 58px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #060638;
+        padding-top: 18px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #missionSection {
+        margin: 28px auto 73px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 20px;
+
+    }
+
+    #missionSection .card {
+        position: relative;
+        width: 350px;
+        margin: 0 auto;
+        background: #333;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, .5);
+        overflow: hidden;
+    }
+    #missionSection .card .layer{
+        position: absolute;
+        top:calc( 100% - 2%);
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#03a9f4, #e91ee3);
+        z-index: 1;
+        transition: 0.5s;
+
+    }
+    #missionSection .card:hover .layer{
+        top: 0px;
+    }
+    #missionSection .card .card-content{
+        position: relative;
+        z-index: 2;
+    }
+</style>
+
+<body>
+    <div class="mainH">
+        <h2>Our Mission</h2>
+    </div>
+    <section id="missionSection">
+        <div class="card">
+            <div class="layer"></div>
+            <div class="card-content">
+                <p>This is the best dance academy of universe</p>
+                <div class="card-img"> <img src="/static/img/1.png" class="dancingimg"></div>
+                <div class="detail">
+                    <h3>Dance Perfection</h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="layer"></div>
+            <div class="card-content">
+                <p>This is the best dance academy of universe</p>
+                <div class="card-img"><img src="/static/img/2.png" alt="" srcset="" class="dancingimg"></div>
+                <div class="detail">
+                    <h3>Dance As You Like</h3>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="layer"></div>
+            <div class="card-content">
+                <p>This is the best dance academy of universe</p>
+                <div class="card-img"> <img src="/static/img/3.png" alt="" srcset="" class="dancingimg"></div>
+                <div class="detail">
+                    <h3>Expert teaching</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

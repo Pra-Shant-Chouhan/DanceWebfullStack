@@ -1,0 +1,63 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+                | BDA
+            li #[a(href="/") HOME]
+            li #[a(href="/") ABOUT]
+            li #[a(href="/") SERVICES]
+            li #[a(href="/") CLASS INFO]
+            li #[a(href="/") CONTACT US]
+
+    section#introSection
+        div Welcome To Bittu's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img 
+                    img(src="/static/img/1.png")
+
+                div.card-content 
+                    p This is the best dance academy of universe
+
+        div.card
+            h3 Dance As You Like
+            div.card-box 
+                div.card-img
+                    img(src="/static/img/2.png", alt="", srcset="")
+
+                div.card-content 
+                    p This is the best dance academy of universe
+        div.card
+            h3 Expert teaching
+            div.card-box
+                div.card-img 
+                    img(src="/static/img/3.png", alt="", srcset="")
+
+                div.card-content 
+                    p This is the best dance academy of universe
+
+    section#sposersSection
+        h1 Our Sponsers
+        div#sponsers 
+            img(src="/static/img/logo1.png", alt="Sponser Image", class="spImage")
+            img(src="/static/img/logo2.png", alt="Sponser Image", class="spImage")
+            img(src="/static/img/logo3.png", alt="Sponser Image", class="spImage")
+            img(src="/static/img/logo4.png", alt="Sponser Image", class="spImage")
+
+    footer#footer
+        |CopyRight © 2020 Bitt2DanceAcademy.com ||All Rights Are Reserved
+
+    script
+      include ../static/index.js
